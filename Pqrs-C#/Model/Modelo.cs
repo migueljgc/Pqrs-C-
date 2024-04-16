@@ -1,5 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using Pqrs_C_.App;
+using SistemaInventarioNet;
 using System;
 using System.Collections.Generic;
 using System.Linq;

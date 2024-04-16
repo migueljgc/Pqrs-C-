@@ -178,7 +178,7 @@
             label4.TabIndex = 3;
             label4.Text = "¿Aun no tienes cuenta?";
             // 
-            // Login
+            // FrmLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -191,7 +191,7 @@
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             IsMdiContainer = true;
-            Name = "Login";
+            Name = "FrmLogin";
             RightToLeft = RightToLeft.No;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
