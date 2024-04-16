@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            button2 = new Button();
+            button1 = new Button();
             btncerrarsesion = new Button();
             btnConfiguracion = new Button();
             btnReportes = new Button();
             btnBodega = new Button();
-            btnInventario = new Button();
-            btnProducto = new Button();
-            btnDashboard = new Button();
+            btnCrearCiudadanos = new Button();
+            btnActualizarUsuario = new Button();
+            btnGestionUsuarios = new Button();
             panel5 = new Panel();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
             panel3 = new Panel();
+            pictureBox2 = new PictureBox();
             btncerrar = new Button();
             panel4 = new Panel();
-            pictureBox2 = new PictureBox();
-            button1 = new Button();
-            button2 = new Button();
             panel1.SuspendLayout();
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -61,9 +61,9 @@
             panel1.Controls.Add(btnConfiguracion);
             panel1.Controls.Add(btnReportes);
             panel1.Controls.Add(btnBodega);
-            panel1.Controls.Add(btnInventario);
-            panel1.Controls.Add(btnProducto);
-            panel1.Controls.Add(btnDashboard);
+            panel1.Controls.Add(btnCrearCiudadanos);
+            panel1.Controls.Add(btnActualizarUsuario);
+            panel1.Controls.Add(btnGestionUsuarios);
             panel1.Controls.Add(panel5);
             panel1.Controls.Add(panel2);
             panel1.Dock = DockStyle.Left;
@@ -71,6 +71,36 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(200, 568);
             panel1.TabIndex = 0;
+            // 
+            // button2
+            // 
+            button2.Dock = DockStyle.Top;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatAppearance.MouseOverBackColor = Color.FromArgb(109, 33, 79);
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.ForeColor = Color.Black;
+            button2.ImageAlign = ContentAlignment.MiddleLeft;
+            button2.Location = new Point(0, 337);
+            button2.Name = "button2";
+            button2.Size = new Size(200, 26);
+            button2.TabIndex = 11;
+            button2.Text = "Eliminar Usuarios Registrados";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            button1.Dock = DockStyle.Top;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(109, 33, 79);
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.ForeColor = Color.Black;
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
+            button1.Location = new Point(0, 311);
+            button1.Name = "button1";
+            button1.Size = new Size(200, 26);
+            button1.TabIndex = 10;
+            button1.Text = "Mostrar Usuarios Registrados";
+            button1.UseVisualStyleBackColor = true;
             // 
             // btncerrarsesion
             // 
@@ -133,51 +163,51 @@
             btnBodega.Text = "Crear Administradores";
             btnBodega.UseVisualStyleBackColor = true;
             // 
-            // btnInventario
+            // btnCrearCiudadanos
             // 
-            btnInventario.Dock = DockStyle.Top;
-            btnInventario.FlatAppearance.BorderSize = 0;
-            btnInventario.FlatAppearance.MouseOverBackColor = Color.FromArgb(109, 33, 79);
-            btnInventario.FlatStyle = FlatStyle.Flat;
-            btnInventario.ForeColor = Color.Black;
-            btnInventario.ImageAlign = ContentAlignment.MiddleLeft;
-            btnInventario.Location = new Point(0, 207);
-            btnInventario.Name = "btnInventario";
-            btnInventario.Size = new Size(200, 26);
-            btnInventario.TabIndex = 5;
-            btnInventario.Text = "Crear Ciudadanos";
-            btnInventario.UseVisualStyleBackColor = true;
+            btnCrearCiudadanos.Dock = DockStyle.Top;
+            btnCrearCiudadanos.FlatAppearance.BorderSize = 0;
+            btnCrearCiudadanos.FlatAppearance.MouseOverBackColor = Color.FromArgb(109, 33, 79);
+            btnCrearCiudadanos.FlatStyle = FlatStyle.Flat;
+            btnCrearCiudadanos.ForeColor = Color.Black;
+            btnCrearCiudadanos.ImageAlign = ContentAlignment.MiddleLeft;
+            btnCrearCiudadanos.Location = new Point(0, 207);
+            btnCrearCiudadanos.Name = "btnCrearCiudadanos";
+            btnCrearCiudadanos.Size = new Size(200, 26);
+            btnCrearCiudadanos.TabIndex = 5;
+            btnCrearCiudadanos.Text = "Crear Ciudadanos";
+            btnCrearCiudadanos.UseVisualStyleBackColor = true;
             // 
-            // btnProducto
+            // btnActualizarUsuario
             // 
-            btnProducto.Dock = DockStyle.Top;
-            btnProducto.FlatAppearance.BorderSize = 0;
-            btnProducto.FlatAppearance.MouseOverBackColor = Color.FromArgb(109, 33, 79);
-            btnProducto.FlatStyle = FlatStyle.Flat;
-            btnProducto.ForeColor = Color.Black;
-            btnProducto.ImageAlign = ContentAlignment.MiddleLeft;
-            btnProducto.Location = new Point(0, 181);
-            btnProducto.Name = "btnProducto";
-            btnProducto.Size = new Size(200, 26);
-            btnProducto.TabIndex = 4;
-            btnProducto.Text = "Actualizar Usuario";
-            btnProducto.UseVisualStyleBackColor = true;
+            btnActualizarUsuario.Dock = DockStyle.Top;
+            btnActualizarUsuario.FlatAppearance.BorderSize = 0;
+            btnActualizarUsuario.FlatAppearance.MouseOverBackColor = Color.FromArgb(109, 33, 79);
+            btnActualizarUsuario.FlatStyle = FlatStyle.Flat;
+            btnActualizarUsuario.ForeColor = Color.Black;
+            btnActualizarUsuario.ImageAlign = ContentAlignment.MiddleLeft;
+            btnActualizarUsuario.Location = new Point(0, 181);
+            btnActualizarUsuario.Name = "btnActualizarUsuario";
+            btnActualizarUsuario.Size = new Size(200, 26);
+            btnActualizarUsuario.TabIndex = 4;
+            btnActualizarUsuario.Text = "Actualizar Usuario";
+            btnActualizarUsuario.UseVisualStyleBackColor = true;
             // 
-            // btnDashboard
+            // btnGestionUsuarios
             // 
-            btnDashboard.Dock = DockStyle.Top;
-            btnDashboard.FlatAppearance.BorderSize = 0;
-            btnDashboard.FlatAppearance.MouseOverBackColor = Color.FromArgb(109, 33, 79);
-            btnDashboard.FlatStyle = FlatStyle.Flat;
-            btnDashboard.ForeColor = Color.Black;
-            btnDashboard.ImageAlign = ContentAlignment.MiddleLeft;
-            btnDashboard.Location = new Point(0, 155);
-            btnDashboard.Name = "btnDashboard";
-            btnDashboard.Size = new Size(200, 26);
-            btnDashboard.TabIndex = 3;
-            btnDashboard.Text = "Gestion Usuarios";
-            btnDashboard.UseVisualStyleBackColor = true;
-            btnDashboard.Click += btnDashboard_Click;
+            btnGestionUsuarios.Dock = DockStyle.Top;
+            btnGestionUsuarios.FlatAppearance.BorderSize = 0;
+            btnGestionUsuarios.FlatAppearance.MouseOverBackColor = Color.FromArgb(109, 33, 79);
+            btnGestionUsuarios.FlatStyle = FlatStyle.Flat;
+            btnGestionUsuarios.ForeColor = Color.Black;
+            btnGestionUsuarios.ImageAlign = ContentAlignment.MiddleLeft;
+            btnGestionUsuarios.Location = new Point(0, 155);
+            btnGestionUsuarios.Name = "btnGestionUsuarios";
+            btnGestionUsuarios.Size = new Size(200, 26);
+            btnGestionUsuarios.TabIndex = 3;
+            btnGestionUsuarios.Text = "Gestion Usuarios";
+            btnGestionUsuarios.UseVisualStyleBackColor = true;
+            btnGestionUsuarios.Click += btnGestionUsuarios_Click;
             // 
             // panel5
             // 
@@ -220,6 +250,16 @@
             panel3.MouseDown += panel3_MouseDown;
             panel3.MouseMove += panel3_MouseMove;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Pqrs_C_.Properties.Resources.pqrspng;
+            pictureBox2.Location = new Point(236, -7);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(223, 62);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 1;
+            pictureBox2.TabStop = false;
+            // 
             // btncerrar
             // 
             btncerrar.Dock = DockStyle.Right;
@@ -243,46 +283,6 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(844, 513);
             panel4.TabIndex = 2;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = Pqrs_C_.Properties.Resources.pqrspng;
-            pictureBox2.Location = new Point(236, -7);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(223, 62);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
-            // 
-            // button1
-            // 
-            button1.Dock = DockStyle.Top;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(109, 33, 79);
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.ForeColor = Color.Black;
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(0, 311);
-            button1.Name = "button1";
-            button1.Size = new Size(200, 26);
-            button1.TabIndex = 10;
-            button1.Text = "Mostrar Usuarios Registrados";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Dock = DockStyle.Top;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatAppearance.MouseOverBackColor = Color.FromArgb(109, 33, 79);
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.ForeColor = Color.Black;
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(0, 337);
-            button2.Name = "button2";
-            button2.Size = new Size(200, 26);
-            button2.TabIndex = 11;
-            button2.Text = "Eliminar Usuarios Registrados";
-            button2.UseVisualStyleBackColor = true;
             // 
             // FrmIndex
             // 
@@ -312,12 +312,12 @@
         private Button btncerrar;
         private PictureBox pictureBox1;
         private Panel panel5;
-        private Button btnDashboard;
+        private Button btnGestionUsuarios;
         private Button btnConfiguracion;
         private Button btnReportes;
         private Button btnBodega;
-        private Button btnInventario;
-        private Button btnProducto;
+        private Button btnCrearCiudadanos;
+        private Button btnActualizarUsuario;
         private Button btncerrarsesion;
         private PictureBox pictureBox2;
         private Button button2;

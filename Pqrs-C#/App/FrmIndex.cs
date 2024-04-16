@@ -37,7 +37,7 @@ namespace SistemaInventarioNet
             }
         }
 
-        private void btnDashboard_Click(object sender, EventArgs e)
+        private void btnGestionUsuarios_Click(object sender, EventArgs e)
         {
             var frmGestionUsuario = new FrmGestionUsuarios();
             frmGestionUsuario.TopLevel = false;
