@@ -11,6 +11,7 @@ namespace Pqrs_C_.Model
 {
     internal class Modelo
     {
+       
         public int registro(Usuarios usuarios)
         {
             MySqlConnection conexion = Conexion.conexion();
@@ -25,10 +26,12 @@ namespace Pqrs_C_.Model
 
             MySqlCommand mySqlCommand = new MySqlCommand();
             mySqlCommand.Connection = conexion;
-            mySqlCommand.CommandText = "INSERT INTO usuario (usuario, contraseña, idtipo_usuario) VALUES(@usuario, @contraseña, @idtipo_usuario)";
+            mySqlCommand.CommandText = "INSERT INTO usuario (usuario, contraseña, idtipo_usuario, Nombre, Apellido) VALUES(@usuario, @contraseña, @idtipo_usuario, @Nombre, @Apellido)";
 
             mySqlCommand.Parameters.AddWithValue("@usuario", usuarios.Usuario);
             mySqlCommand.Parameters.AddWithValue("@contraseña", usuarios.Contraseña);
+            mySqlCommand.Parameters.AddWithValue("@Nombre", usuarios.nombre);
+            mySqlCommand.Parameters.AddWithValue("@Apellido", usuarios.apellido);
             mySqlCommand.Parameters.AddWithValue("@idtipo_usuario", 2);
 
             int result = mySqlCommand.ExecuteNonQuery();
@@ -107,6 +110,8 @@ namespace Pqrs_C_.Model
             }
             conexion.Close();
         }
+       
         
+
     }
 }

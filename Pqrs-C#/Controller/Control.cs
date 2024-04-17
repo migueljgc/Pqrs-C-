@@ -1,4 +1,5 @@
-﻿using Pqrs_C_.Model;
+﻿using MySql.Data.MySqlClient;
+using Pqrs_C_.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,5 +41,10 @@ namespace Pqrs_C_.Controller
             return Respuesta;
             
         }
+
+        
+
+
+
     }
 }

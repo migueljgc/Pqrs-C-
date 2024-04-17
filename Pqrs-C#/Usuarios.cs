@@ -8,13 +8,17 @@ namespace Pqrs_C_
 {
     internal class Usuarios
     {
-        int id, idtipo_usuario;
-        string usuario, contraseña;
+        int idusuario, idtipo_usuario;
+        string usuario, contraseña, Nombre, Apellido, Rol;
 
-        public string Usuario { get => usuario; set => usuario = value; }
+        
         public string Contraseña { get => contraseña; set => contraseña = value; }
-        public int Id { get => id; set => id = value; }
+        public int Id { get => idusuario; set => idusuario = value; }
         public int Idtipo_usuario { get => idtipo_usuario; set => idtipo_usuario = value; }
+        public string Usuario { get => usuario; set => usuario = value; }
+        public string nombre { get => Nombre; set => Nombre = value; }
+        public string apellido { get => Apellido; set => Apellido = value; }
+        public string rol { get => Rol; set => Rol = value; }
     }
 
 }

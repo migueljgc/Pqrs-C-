@@ -39,7 +39,7 @@ namespace SistemaInventarioNet
 
         private void btnGestionUsuarios_Click(object sender, EventArgs e)
         {
-            var frmGestionUsuario = new FrmGestionUsuarios();
+            var frmGestionUsuario = new FrmVerUsuarios();
             frmGestionUsuario.TopLevel = false;
             panel4.Controls.Add(frmGestionUsuario);
             frmGestionUsuario.BringToFront();
@@ -48,9 +48,18 @@ namespace SistemaInventarioNet
 
         private void btncerrarsesion_Click(object sender, EventArgs e)
         {
-            var frmLogin= new FrmLogin();
+            var frmLogin = new FrmLogin();
             frmLogin.Show();
             this.Hide();
+        }
+
+        private void btnActualizarUsuario_Click(object sender, EventArgs e)
+        {
+            var frmActualizarUsuario= new FrmGestionUsuario();
+            frmActualizarUsuario.TopLevel= false;
+            panel4.Controls.Add(frmActualizarUsuario);
+            frmActualizarUsuario.BringToFront();
+            frmActualizarUsuario.Show();
         }
     }
 }

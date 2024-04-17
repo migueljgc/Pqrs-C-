@@ -34,6 +34,10 @@
             BtnRegistar2 = new Button();
             label2 = new Label();
             label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            txtApellido = new TextBox();
+            txtNombre = new TextBox();
             SuspendLayout();
             // 
             // label1
@@ -51,7 +55,7 @@
             // 
             TxtUsuario.BackColor = Color.White;
             TxtUsuario.BorderStyle = BorderStyle.FixedSingle;
-            TxtUsuario.Location = new Point(85, 59);
+            TxtUsuario.Location = new Point(12, 58);
             TxtUsuario.Name = "TxtUsuario";
             TxtUsuario.Size = new Size(138, 23);
             TxtUsuario.TabIndex = 1;
@@ -60,7 +64,7 @@
             // 
             TxtContraseña.BackColor = Color.White;
             TxtContraseña.BorderStyle = BorderStyle.FixedSingle;
-            TxtContraseña.Location = new Point(84, 120);
+            TxtContraseña.Location = new Point(11, 119);
             TxtContraseña.Name = "TxtContraseña";
             TxtContraseña.PasswordChar = '*';
             TxtContraseña.Size = new Size(139, 23);
@@ -84,7 +88,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(126, 41);
+            label2.Location = new Point(53, 40);
             label2.Name = "label2";
             label2.Size = new Size(56, 15);
             label2.TabIndex = 4;
@@ -93,11 +97,49 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(111, 102);
+            label3.Location = new Point(38, 101);
             label3.Name = "label3";
             label3.Size = new Size(83, 15);
             label3.TabIndex = 5;
             label3.Text = "CONTRASEÑA";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(200, 101);
+            label4.Name = "label4";
+            label4.Size = new Size(60, 15);
+            label4.TabIndex = 9;
+            label4.Text = "APELLIDO";
+            label4.Click += label4_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(215, 40);
+            label5.Name = "label5";
+            label5.Size = new Size(56, 15);
+            label5.TabIndex = 8;
+            label5.Text = "NOMBRE";
+            // 
+            // txtApellido
+            // 
+            txtApellido.BackColor = Color.White;
+            txtApellido.BorderStyle = BorderStyle.FixedSingle;
+            txtApellido.Location = new Point(173, 119);
+            txtApellido.Name = "txtApellido";
+            txtApellido.PasswordChar = '*';
+            txtApellido.Size = new Size(139, 23);
+            txtApellido.TabIndex = 7;
+            // 
+            // txtNombre
+            // 
+            txtNombre.BackColor = Color.White;
+            txtNombre.BorderStyle = BorderStyle.FixedSingle;
+            txtNombre.Location = new Point(174, 58);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(138, 23);
+            txtNombre.TabIndex = 6;
             // 
             // FrmRegistro
             // 
@@ -105,6 +147,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(324, 230);
+            Controls.Add(label4);
+            Controls.Add(label5);
+            Controls.Add(txtApellido);
+            Controls.Add(txtNombre);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(BtnRegistar2);
@@ -126,5 +172,9 @@
         private Button BtnRegistar2;
         private Label label2;
         private Label label3;
+        private Label label4;
+        private Label label5;
+        private TextBox txtApellido;
+        private TextBox txtNombre;
     }
 }
