@@ -93,13 +93,33 @@ namespace Pqrs_C_.Model
 
             if (dr.Read())
             {
-                var frmLogin = new FrmLogin();
-                var frmIndex = new FrmIndex();
-                frmIndex.Show();
-               
-                frmLogin.Hide();
-
+                conexion.Close();
                 
+                try
+                {
+                    conexion.Open();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                mySqlCommand.CommandText = "select idtipo_usuario,usuario,contraseña from usuario where idtipo_usuario =@idtipo_usuario AND usuario = @usuario AND contraseña = @contraseña ";
+                mySqlCommand.Parameters.AddWithValue("@idtipo_usuario", 1);
+                MySqlDataReader dr2 = mySqlCommand.ExecuteReader();
+
+                if (dr2.Read())
+                {
+                    var frmLogin = new FrmLogin();
+                    var frmIndex = new FrmIndex();
+                    frmIndex.Show();
+
+                    frmLogin.Hide();
+
+                }
+                else
+                {
+                    MessageBox.Show("espere");
+                }
 
             }
             else

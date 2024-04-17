@@ -33,7 +33,6 @@
             btnConfiguracion = new Button();
             btnReportes = new Button();
             btnBodega = new Button();
-            btnCrearCiudadanos = new Button();
             btnGestionUsuario = new Button();
             btnVerUsuarios = new Button();
             panel5 = new Panel();
@@ -57,7 +56,6 @@
             panel1.Controls.Add(btnConfiguracion);
             panel1.Controls.Add(btnReportes);
             panel1.Controls.Add(btnBodega);
-            panel1.Controls.Add(btnCrearCiudadanos);
             panel1.Controls.Add(btnGestionUsuario);
             panel1.Controls.Add(btnVerUsuarios);
             panel1.Controls.Add(panel5);
@@ -92,7 +90,7 @@
             btnConfiguracion.FlatStyle = FlatStyle.Flat;
             btnConfiguracion.ForeColor = Color.Black;
             btnConfiguracion.ImageAlign = ContentAlignment.MiddleLeft;
-            btnConfiguracion.Location = new Point(0, 285);
+            btnConfiguracion.Location = new Point(0, 259);
             btnConfiguracion.Name = "btnConfiguracion";
             btnConfiguracion.Size = new Size(200, 26);
             btnConfiguracion.TabIndex = 8;
@@ -107,7 +105,7 @@
             btnReportes.FlatStyle = FlatStyle.Flat;
             btnReportes.ForeColor = Color.Black;
             btnReportes.ImageAlign = ContentAlignment.MiddleLeft;
-            btnReportes.Location = new Point(0, 259);
+            btnReportes.Location = new Point(0, 233);
             btnReportes.Name = "btnReportes";
             btnReportes.Size = new Size(200, 26);
             btnReportes.TabIndex = 7;
@@ -122,27 +120,12 @@
             btnBodega.FlatStyle = FlatStyle.Flat;
             btnBodega.ForeColor = Color.Black;
             btnBodega.ImageAlign = ContentAlignment.MiddleLeft;
-            btnBodega.Location = new Point(0, 233);
+            btnBodega.Location = new Point(0, 207);
             btnBodega.Name = "btnBodega";
             btnBodega.Size = new Size(200, 26);
             btnBodega.TabIndex = 6;
             btnBodega.Text = "Crear Administradores";
             btnBodega.UseVisualStyleBackColor = true;
-            // 
-            // btnCrearCiudadanos
-            // 
-            btnCrearCiudadanos.Dock = DockStyle.Top;
-            btnCrearCiudadanos.FlatAppearance.BorderSize = 0;
-            btnCrearCiudadanos.FlatAppearance.MouseOverBackColor = Color.FromArgb(109, 33, 79);
-            btnCrearCiudadanos.FlatStyle = FlatStyle.Flat;
-            btnCrearCiudadanos.ForeColor = Color.Black;
-            btnCrearCiudadanos.ImageAlign = ContentAlignment.MiddleLeft;
-            btnCrearCiudadanos.Location = new Point(0, 207);
-            btnCrearCiudadanos.Name = "btnCrearCiudadanos";
-            btnCrearCiudadanos.Size = new Size(200, 26);
-            btnCrearCiudadanos.TabIndex = 5;
-            btnCrearCiudadanos.Text = "Crear Ciudadanos";
-            btnCrearCiudadanos.UseVisualStyleBackColor = true;
             // 
             // btnGestionUsuario
             // 
@@ -283,7 +266,6 @@
         private Button btnConfiguracion;
         private Button btnReportes;
         private Button btnBodega;
-        private Button btnCrearCiudadanos;
         private Button btnGestionUsuario;
         private Button btncerrarsesion;
         private PictureBox pictureBox2;
