@@ -1,5 +1,4 @@
-﻿using MySql.Data.MySqlClient;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,14 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Pqrs_C_.Controller;
-using Pqrs_C_.Model;
 
-namespace Pqrs_C_
+namespace Pqrs_C_.App.User_Admin
 {
-    public partial class FrmRegistro : Form
+    public partial class FrmRegistroSecreDepen : Form
     {
-        public FrmRegistro()
+        public FrmRegistroSecreDepen()
         {
             InitializeComponent();
         }
@@ -27,10 +24,12 @@ namespace Pqrs_C_
             usuarios.Contraseña = TxtContraseña.Text;
             usuarios.nombre = txtNombre.Text;
             usuarios.apellido = txtApellido.Text;
-            usuarios.rol = "2";
+            usuarios.Dependencia1 = this.cbDependencia.Text;
+            usuarios.rol = "3";
+
 
             Controller.Control control = new Controller.Control();
-            control.ControlRegistro(usuarios);
+            control.ControlRegistroUsu(usuarios);
             string respuesta = control.Respuesta;
 
             try
@@ -49,11 +48,6 @@ namespace Pqrs_C_
             {
                 MessageBox.Show(ex.Message);
             }
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

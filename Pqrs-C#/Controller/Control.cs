@@ -54,7 +54,7 @@ namespace Pqrs_C_.Controller
             {
                 if (!modelo.existeuser(usuarios.Usuario))
                 {
-                    modelo.registro_Usu(usuarios);
+                    modelo.registro_SecreDepe(usuarios);
 
                     Respuesta = "Registro exitoso";
 

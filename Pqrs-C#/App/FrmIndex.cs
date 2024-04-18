@@ -65,11 +65,20 @@ namespace SistemaInventarioNet
 
         private void btnCrearAdmin_Click(object sender, EventArgs e)
         {
-            var frmRegistroAdministradores = new FrmRegistroUsu() ;
+            var frmRegistroAdministradores = new FrmRegistroAdmin();
             frmRegistroAdministradores.TopLevel = false;
             panel4.Controls.Add(frmRegistroAdministradores);
             frmRegistroAdministradores.BringToFront();
             frmRegistroAdministradores.Show();
+        }
+
+        private void btnConfiguracion_Click(object sender, EventArgs e)
+        {
+            var frmRegistroSecreDepen = new FrmRegistroSecreDepen();
+            frmRegistroSecreDepen.TopLevel = false;
+            panel4.Controls.Add(frmRegistroSecreDepen);
+            frmRegistroSecreDepen.BringToFront();
+            frmRegistroSecreDepen.Show();
         }
     }
 }

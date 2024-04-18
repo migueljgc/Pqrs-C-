@@ -32,7 +32,7 @@ namespace Pqrs_C_.Model
             mySqlCommand.Parameters.AddWithValue("@contraseña", usuarios.Contraseña);
             mySqlCommand.Parameters.AddWithValue("@Nombre", usuarios.nombre);
             mySqlCommand.Parameters.AddWithValue("@Apellido", usuarios.apellido);
-            mySqlCommand.Parameters.AddWithValue("@idtipo_usuario", 2);
+            mySqlCommand.Parameters.AddWithValue("@idtipo_usuario", usuarios.rol);
 
             int result = mySqlCommand.ExecuteNonQuery();
             return result;
@@ -131,7 +131,7 @@ namespace Pqrs_C_.Model
             conexion.Close();
         }
 
-        public int registro_Usu(Usuarios usuarios)
+        public int registro_SecreDepe(Usuarios usuarios)
         {
             MySqlConnection conexion = Conexion.conexion();
             try
@@ -145,13 +145,14 @@ namespace Pqrs_C_.Model
 
             MySqlCommand mySqlCommand = new MySqlCommand();
             mySqlCommand.Connection = conexion;
-            mySqlCommand.CommandText = "INSERT INTO usuario (usuario, contraseña, idtipo_usuario, Nombre, Apellido) VALUES(@usuario, @contraseña, @idtipo_usuario, @Nombre, @Apellido)";
+            mySqlCommand.CommandText = "INSERT INTO usuario (usuario, contraseña, idtipo_usuario, Nombre, Apellido, Dependencia) VALUES(@usuario, @contraseña, @idtipo_usuario, @Nombre, @Apellido, @Secretario)";
 
             mySqlCommand.Parameters.AddWithValue("@usuario", usuarios.Usuario);
             mySqlCommand.Parameters.AddWithValue("@contraseña", usuarios.Contraseña);
             mySqlCommand.Parameters.AddWithValue("@Nombre", usuarios.nombre);
             mySqlCommand.Parameters.AddWithValue("@Apellido", usuarios.apellido);
             mySqlCommand.Parameters.AddWithValue("@idtipo_usuario", usuarios.rol);
+            mySqlCommand.Parameters.AddWithValue("@Secretario", usuarios.Dependencia1);
 
             int result = mySqlCommand.ExecuteNonQuery();
             return result;

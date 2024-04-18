@@ -96,6 +96,7 @@
             btnConfiguracion.TabIndex = 8;
             btnConfiguracion.Text = "Crear Secretario de Despacho";
             btnConfiguracion.UseVisualStyleBackColor = true;
+            btnConfiguracion.Click += btnConfiguracion_Click;
             // 
             // btnReportes
             // 

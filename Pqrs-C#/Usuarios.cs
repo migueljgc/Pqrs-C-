@@ -9,7 +9,7 @@ namespace Pqrs_C_
     internal class Usuarios
     {
         int idusuario, idtipo_usuario;
-        string usuario, contraseña, Nombre, Apellido, Rol;
+        string usuario, contraseña, Nombre, Apellido, Rol, Dependencia;
 
         
         public string Contraseña { get => contraseña; set => contraseña = value; }
@@ -19,6 +19,7 @@ namespace Pqrs_C_
         public string nombre { get => Nombre; set => Nombre = value; }
         public string apellido { get => Apellido; set => Apellido = value; }
         public string rol { get => Rol; set => Rol = value; }
+        public string Dependencia1 { get => Dependencia; set => Dependencia = value; }
     }
 
 }

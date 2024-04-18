@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Pqrs_C_.App.User_Admin
 {
-    public partial class FrmRegistroUsu : Form
+    public partial class FrmRegistroAdmin : Form
     {
-        public FrmRegistroUsu()
+        public FrmRegistroAdmin()
         {
             InitializeComponent();
         }
@@ -24,10 +24,10 @@ namespace Pqrs_C_.App.User_Admin
             usuarios.Contraseña = TxtContraseña.Text;
             usuarios.nombre = txtNombre.Text;
             usuarios.apellido = txtApellido.Text;
-            usuarios.rol =this.cbTipo_Usu.Text;
+            usuarios.rol ="3";
             
             Controller.Control control = new Controller.Control();
-            control.ControlRegistroUsu(usuarios);
+            control.ControlRegistro(usuarios);
             string respuesta = control.Respuesta;
             
             try
