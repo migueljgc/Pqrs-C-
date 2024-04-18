@@ -32,7 +32,7 @@
             btncerrarsesion = new Button();
             btnConfiguracion = new Button();
             btnReportes = new Button();
-            btnBodega = new Button();
+            btnCrearAdmin = new Button();
             btnGestionUsuario = new Button();
             btnVerUsuarios = new Button();
             panel5 = new Panel();
@@ -55,7 +55,7 @@
             panel1.Controls.Add(btncerrarsesion);
             panel1.Controls.Add(btnConfiguracion);
             panel1.Controls.Add(btnReportes);
-            panel1.Controls.Add(btnBodega);
+            panel1.Controls.Add(btnCrearAdmin);
             panel1.Controls.Add(btnGestionUsuario);
             panel1.Controls.Add(btnVerUsuarios);
             panel1.Controls.Add(panel5);
@@ -112,20 +112,21 @@
             btnReportes.Text = "Crear Secretarias De Despacho";
             btnReportes.UseVisualStyleBackColor = true;
             // 
-            // btnBodega
+            // btnCrearAdmin
             // 
-            btnBodega.Dock = DockStyle.Top;
-            btnBodega.FlatAppearance.BorderSize = 0;
-            btnBodega.FlatAppearance.MouseOverBackColor = Color.FromArgb(109, 33, 79);
-            btnBodega.FlatStyle = FlatStyle.Flat;
-            btnBodega.ForeColor = Color.Black;
-            btnBodega.ImageAlign = ContentAlignment.MiddleLeft;
-            btnBodega.Location = new Point(0, 207);
-            btnBodega.Name = "btnBodega";
-            btnBodega.Size = new Size(200, 26);
-            btnBodega.TabIndex = 6;
-            btnBodega.Text = "Crear Administradores";
-            btnBodega.UseVisualStyleBackColor = true;
+            btnCrearAdmin.Dock = DockStyle.Top;
+            btnCrearAdmin.FlatAppearance.BorderSize = 0;
+            btnCrearAdmin.FlatAppearance.MouseOverBackColor = Color.FromArgb(109, 33, 79);
+            btnCrearAdmin.FlatStyle = FlatStyle.Flat;
+            btnCrearAdmin.ForeColor = Color.Black;
+            btnCrearAdmin.ImageAlign = ContentAlignment.MiddleLeft;
+            btnCrearAdmin.Location = new Point(0, 207);
+            btnCrearAdmin.Name = "btnCrearAdmin";
+            btnCrearAdmin.Size = new Size(200, 26);
+            btnCrearAdmin.TabIndex = 6;
+            btnCrearAdmin.Text = "Crear Administradores";
+            btnCrearAdmin.UseVisualStyleBackColor = true;
+            btnCrearAdmin.Click += btnCrearAdmin_Click;
             // 
             // btnGestionUsuario
             // 
@@ -265,7 +266,7 @@
         private Button btnVerUsuarios;
         private Button btnConfiguracion;
         private Button btnReportes;
-        private Button btnBodega;
+        private Button btnCrearAdmin;
         private Button btnGestionUsuario;
         private Button btncerrarsesion;
         private PictureBox pictureBox2;

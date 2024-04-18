@@ -42,7 +42,34 @@ namespace Pqrs_C_.Controller
             
         }
 
-        
+        public string ControlRegistroUsu(Usuarios usuarios)
+        {
+            Modelo modelo = new Modelo();
+
+            if (string.IsNullOrEmpty(usuarios.Usuario) || string.IsNullOrEmpty(usuarios.Contraseña))
+            {
+                MessageBox.Show("Debe llenar todos los campos");
+            }
+            else
+            {
+                if (!modelo.existeuser(usuarios.Usuario))
+                {
+                    modelo.registro_Usu(usuarios);
+
+                    Respuesta = "Registro exitoso";
+
+                }
+                else if (modelo.existeuser(usuarios.Usuario))
+                {
+                    Respuesta = "";
+                }
+
+
+            }
+            return Respuesta;
+
+        }
+
 
 
 

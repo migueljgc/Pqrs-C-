@@ -130,8 +130,33 @@ namespace Pqrs_C_.Model
             }
             conexion.Close();
         }
-       
-        
+
+        public int registro_Usu(Usuarios usuarios)
+        {
+            MySqlConnection conexion = Conexion.conexion();
+            try
+            {
+                conexion.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            MySqlCommand mySqlCommand = new MySqlCommand();
+            mySqlCommand.Connection = conexion;
+            mySqlCommand.CommandText = "INSERT INTO usuario (usuario, contraseña, idtipo_usuario, Nombre, Apellido) VALUES(@usuario, @contraseña, @idtipo_usuario, @Nombre, @Apellido)";
+
+            mySqlCommand.Parameters.AddWithValue("@usuario", usuarios.Usuario);
+            mySqlCommand.Parameters.AddWithValue("@contraseña", usuarios.Contraseña);
+            mySqlCommand.Parameters.AddWithValue("@Nombre", usuarios.nombre);
+            mySqlCommand.Parameters.AddWithValue("@Apellido", usuarios.apellido);
+            mySqlCommand.Parameters.AddWithValue("@idtipo_usuario", usuarios.rol);
+
+            int result = mySqlCommand.ExecuteNonQuery();
+            return result;
+        }
+
 
     }
 }

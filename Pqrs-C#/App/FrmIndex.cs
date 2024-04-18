@@ -1,5 +1,6 @@
 using Pqrs_C_;
 using Pqrs_C_.App;
+using Pqrs_C_.App.User_Admin;
 
 namespace SistemaInventarioNet
 {
@@ -55,11 +56,20 @@ namespace SistemaInventarioNet
 
         private void btnActualizarUsuario_Click(object sender, EventArgs e)
         {
-            var frmActualizarUsuario= new FrmGestionUsuario();
-            frmActualizarUsuario.TopLevel= false;
+            var frmActualizarUsuario = new FrmGestionUsuario();
+            frmActualizarUsuario.TopLevel = false;
             panel4.Controls.Add(frmActualizarUsuario);
             frmActualizarUsuario.BringToFront();
             frmActualizarUsuario.Show();
+        }
+
+        private void btnCrearAdmin_Click(object sender, EventArgs e)
+        {
+            var frmRegistroAdministradores = new FrmRegistroUsu() ;
+            frmRegistroAdministradores.TopLevel = false;
+            panel4.Controls.Add(frmRegistroAdministradores);
+            frmRegistroAdministradores.BringToFront();
+            frmRegistroAdministradores.Show();
         }
     }
 }

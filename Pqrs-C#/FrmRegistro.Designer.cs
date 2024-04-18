@@ -128,7 +128,6 @@
             txtApellido.BorderStyle = BorderStyle.FixedSingle;
             txtApellido.Location = new Point(173, 119);
             txtApellido.Name = "txtApellido";
-            txtApellido.PasswordChar = '*';
             txtApellido.Size = new Size(139, 23);
             txtApellido.TabIndex = 7;
             // 
